@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.1 - 2024-10-28
+
+### Fixed
+
+- Error in logic for clearing block cache data for related entries
+
 ## 3.1.0 - 2024-10-24
 
 ### Added

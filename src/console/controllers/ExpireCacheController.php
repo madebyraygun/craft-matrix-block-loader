@@ -38,7 +38,7 @@ class ExpireCacheController extends Controller
         foreach ($entries as $expired) {
             $entryId = $expired->id;
             $exists = ExpireCacheRecord::find()->where(['entryId' => $entryId])->one();
-            ContextCache::clear($expired);
+            ContextCache::clearRelations($expired);
             $model = new ExpireCacheModel(
                 [
                     'entryId' => $entryId,
