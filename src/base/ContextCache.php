@@ -68,6 +68,9 @@ class ContextCache
             }
             $cleanedIds[] = $entry->id;
             static::clear($entry);
+            if ($entry->owner && !in_array($entry->ownerId, $cleanedIds)) {
+                static::clear($entry->owner);
+            }
         }
     }
 
