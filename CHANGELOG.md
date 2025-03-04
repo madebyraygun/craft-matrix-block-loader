@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.2 - 2025-2-28
+
+### Fixed
+
+- Clear cache for related entry owner element on entry save
+
 ## 3.1.1 - 2024-10-28
 
 ### Fixed
